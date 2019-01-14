@@ -4,7 +4,6 @@ function bubbleSort(array) {
     for (let j = 0; j < i; j++) {
       let x = j;
       let y = x + 1;
-      debugger;
       if (array[x] > array[y]) {
         let first = array[x];
         let second = array[y];
