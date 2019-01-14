@@ -12,7 +12,7 @@ describe('the bubble sorting algorithm', function(){
 
 
   })
-  it('uses swap', function(){
+  it('uses swap the right amount of times', function(){
     spyOn(window, 'swap')
     bubbleSort(test_sort_arr);
     expect(swap.calls.count()).toEqual(55)
