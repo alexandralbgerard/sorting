@@ -23,8 +23,23 @@ describe('Merge Function', function() {
 describe('mergeSort Array Function', function() {
   it('is able to merge and sort an even length array', function() {
     expect(mergeSort([15, 4, 2, 5, 8, 1])).toEqual([1, 2, 4, 5, 8, 15]);
-    it('is able to merge and sort an odd length array', function() {
-      expect(mergeSort([15, 4, 2, 5, 8])).toEqual([2, 4, 5, 8, 15]);
-    });
+  });
+
+  it('is able to merge and sort an odd length array', function() {
+    expect(mergeSort([15, 4, 2, 5, 8])).toEqual([2, 4, 5, 8, 15]);
+  });
+
+  it('is able to merge and sort super crazy arrays', function() {
+    expect(mergeSort([546, 829, 43, 1, 9, 666666, -8, 345, 98])).toEqual([
+      -8,
+      1,
+      9,
+      43,
+      98,
+      345,
+      546,
+      829,
+      666666,
+    ]);
   });
 });
